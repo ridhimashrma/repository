@@ -1,6 +1,25 @@
-name: My First Workflow
+# name: My First Workflow
 
-on : push
+# on : push
+
+# jobs:
+#   say-hello:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Print message
+#         run: echo "Hello, Github Actions!"
+#       - name: Print my name
+#         run: echo "Ridhima Sharma"
+#       - name: bye message
+#         run: echo "Bye, Github Actions!"
+
+
+name: My Second Workflow
+
+on:
+  push:
+  pull_request:
 
 jobs:
   say-hello:
