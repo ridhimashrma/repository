@@ -50,7 +50,7 @@ jobs:
 
   say-bye:
     runs-on: ubuntu-latest
-    needs: job1
+    needs: say-hello
     steps:
       - name: Job 2 Step
         run: echo "Bye Ridhima, from Job 2"
