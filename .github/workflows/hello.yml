@@ -48,16 +48,10 @@ jobs:
       - name: Job 1 Step
         run: echo "Hello from Job 1"
 
-  say-MyName:
+  say-bye:
     runs-on: ubuntu-latest
     needs: job1
     steps:
       - name: Job 2 Step
-        run: echo "Hello Ridhima, from Job 2"
+        run: echo "Bye Ridhima, from Job 2"
 
-  say-bye:
-    runs-on: ubuntu-latest
-    needs: job2
-    steps:
-      - name: Job 3 Step
-        run: echo "Bye from Job 3"
