@@ -37,6 +37,27 @@
 
 
 
+# name: My Third Workflow
+
+# on: push
+
+# jobs:
+#   say-hello:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Job 1 Step
+#         run: echo "Hello from Job 1"
+
+#   say-bye:
+#     runs-on: ubuntu-latest
+#     needs: say-hello
+#     steps:
+#       - name: Job 2 Step
+#         run: echo "Bye Ridhima, from Job 2"
+
+
+
+
 name: My Third Workflow
 
 on: push
@@ -45,13 +66,8 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Job 1 Step
-        run: echo "Hello from Job 1"
+      - name: checkout code
+        run: actions/checkout@v4
 
-  say-bye:
-    runs-on: ubuntu-latest
-    needs: say-hello
-    steps:
-      - name: Job 2 Step
-        run: echo "Bye Ridhima, from Job 2"
-
+      - name: list file
+        run: ls
