@@ -74,5 +74,13 @@ jobs:
         run: node -v
       - name: starting test
         run: npm run test
+
+  deploy-app:
+    runs-on: ubuntu-latest
+    needs: say-hello
+    steps:
+      - name: start server
+        uses: node server
        
 
+# \"test passed\""
