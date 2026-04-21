@@ -84,7 +84,7 @@ jobs:
       - name: install dependencies
         run: npm i
       - name: start server
-        uses: node server
+        run: node server
        
 
 # \"test passed\""
