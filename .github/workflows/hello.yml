@@ -71,3 +71,5 @@ jobs:
 
       - name: list file
         run: ls
+      - name: print node version
+        uses: Node -v
