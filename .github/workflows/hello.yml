@@ -66,10 +66,13 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      # - name: checkout code
-      #   uses: actions/checkout@v4
-
+      - name: checkout code
+        uses: actions/checkout@v4
       - name: list file
         run: ls
       - name: print node version
         run: node -v
+      - name: starting test
+        run: npm run test
+       
+
