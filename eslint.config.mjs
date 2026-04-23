@@ -6,8 +6,8 @@ export default [
     files: ["**/*.js"],
     languageOptions: {
       ecmaVersion: "latest",
-      sourceType: "module",   // ✅ THIS FIXES ERROR
-      globals: globals.node   // ✅ for Node environment
+      sourceType: "module",   
+      globals: globals.node  
     }
   },
   js.configs.recommended,
