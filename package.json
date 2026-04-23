@@ -4,8 +4,10 @@
   "description": "this is a repository in which we have created a yml file and performed github actions",
   "main": "index.js",
   "scripts": {
-    "test": "echo test successful"
-  },
+  "test": "echo test successful",
+  "lint": "eslint .",
+  "build": "echo Build step completed"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ridhimashrma/repository.git"
