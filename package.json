@@ -4,10 +4,10 @@
   "description": "this is a repository in which we have created a yml file and performed github actions",
   "main": "index.js",
   "scripts": {
-  "test": "echo test successful",
-  "lint": "eslint .",
-  "build": "echo Build step completed"
-},
+    "test": "echo test successful",
+    "lint": "eslint .",
+    "build": "echo Build step completed"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ridhimashrma/repository.git"
@@ -22,7 +22,11 @@
   "homepage": "https://github.com/ridhimashrma/repository#readme",
   "dependencies": {
     "body-parser": "^2.2.2",
-    "eslint": "^10.2.1",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
+    "globals": "^17.5.0"
   }
 }
